@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+.div_form {
+	text-align:center;
+	font-family: メイリオ ;
+}
+.div_form form {
+    display: inline-block;
+    margin: 8px;
+	font-family: 創英角ポップ体 ;
+	font-weight : bold ;
+}
+
+table {
+	display:table;
+	width:100%;
+
+}
+table_left {
+	display:table-cell;
+	width:25%;
+	text-align:center;
+	font-family: メイリオ ;
+}
+table_center {
+	display:table-cell;
+	width:50%;
+	font-family: メイリオ ;
+}
+table_right {
+	display:table-cell;
+	width:25%;
+	text-align:center;
+	color: #ffffff;
+	font-family: メイリオ ;
+
+}
+.rule {
+	display:table-cell;
+	width:25%;
+	text-align:left;
+	color         : #ffffff;
+	font-family: メイリオ ;
+}
+.logout_form {
+	text-align: right;
+}
+.button_stand {
+ display       : inline-block;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 15px 20px;
+  background    : #ffff1a;
+  color         : #000000;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #000000;
+  font-size: 120%;
+  font-family: メイリオ;
+}
+.button_stand:hover{
+  box-shadow    : none;
+  color         : #000000;
+  background    : #ffffff;
+  font-family: メイリオ;
+}
+.button_hit {
+display       : inline-block;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 15px 20px;
+  background    : #0080ff;
+  color         : #000000;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #000000;
+  font-family: メイリオ;
+  font-size: 120%;
+}
+.button_hit:hover{
+  box-shadow    : none;
+  color         : #000000;
+  background    : #ffffff;
+  font-family: メイリオ;
+}
+.button_double {
+display       : inline-block;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 15px 20px;
+  background    : #00ff00;
+  color         : #000000;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #000000;
+  font-family: メイリオ;
+  font-size: 120%;
+}
+ダブル:disabled {
+	background-color: #cccccc;
+	color: #cccccc;
+}
+.button_double:hover{
+  box-shadow    : none;
+  color         : #000000;
+  background    : #ffffff;
+  font-family: メイリオ;
+}
+.button_surrender {
+display       : inline-block;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 15px 20px;
+  background    : #8000ff;
+  color         : #000000;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #000000;
+  font-family: メイリオ;
+  font-size: 120%;
+}
+.button_surrender:hover {
+  box-shadow    : none;
+  color         : #000000;
+  background    : #ffffff;
+  font-family: メイリオ;
+}
+.button_disabled {
+  display       : inline-block;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 15px 20px;
+  background    : #c0c0c0;
+  color         : #c0c0c0;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #000000;
+  font-family: メイリオ;
+  font-size: 120%;
+}
+.board {
+ margin        : auto;
+  box-sizing    : border-box;
+  width         : 50%;
+  max-width     : 500px;
+  height        : 100px;
+  padding       : 23px;
+  font-size     : 30px;
+  text-align    : center;
+  color         : white;
+  display:table-cell;
+  text-align: center;
+  background    : seagreen;
+  border        : 7px ridge maroon;
+  border-radius : 1px;
+  font-family: メイリオ;
+}
+.blink {
+	-webkit-animation: blink 2s ease-in-out infinite alternate;
+	animation: blink 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.body {
+  background-image: url("/bj/img/kajino_haikei2.jpg");
+  background-size: cover;
+}
+.start {
+	text-align: center;
+	color: white;
+	font-size: 120%;
+}
+.start form {
+	text-align: center;
+}
+.game_start {
+  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 36pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 12px;
+  background    : #ffffff;
+  color         : #000000;
+  line-height   : 1em;
+  opacity       : 1;
+  transition    : .3s;
+}
+.game_start:hover {
+  opacity       : 0.9;
+}
+.login_body {
+  background-image: url("/bj/img/login_bokasi1.png");
+  background-size: cover;
+}
+.button_login {
+  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 12px;
+  background    : #4da6ff;
+  color         : #ffffff;
+  line-height   : 1em;
+  opacity       : 1;
+  transition    : .3s;
+}
+.button_login:hover {
+	 opacity       : 0.8;
+}
+.button_register {
+	  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 12px;
+  background    : #ff8040;
+  color         : #ffffff;
+  line-height   : 1em;
+  opacity       : 1;
+  transition    : .3s;
+}
+.button_register:hover {
+	opacity       : 0.8;
+}
+.button_select {
+	width:75px;
+	height:40px;
+    background: #4da6ff;
+    color: #ffffff;
+	font-size: 10pt;
+	border:2px solid #000000;
+	font-weight: 600;
+	border-radius : 5%;
+}
+.message {
+  color: black;
+}
+.logout_body {
+  background-size: cover;
+  background : whitesmoke;
+  text-align:center;
+}
+.select_form {
+ position: relative;
+ margin: 4em auto;
+ padding: 3em;
+ color: #000000;
+ background-color: #ffffff;
+ border: 2px solid #000000;
+ box-shadow: 2px 2px 1px #ccc;
+ width: 25%;
+}
+.select_form_title {
+ position: absolute;
+ padding: 0 .5em;
+ left: 20px;
+ top: -15px;
+ font-weight: bold;
+ background-color: #fff;
+ color: #000000;
+}
+.select_form form {
+	font-size: 15pt;
+	font-weight: 600;
+	margin-left: auto;
+    margin-right: auto;
+    width: 15em
+}

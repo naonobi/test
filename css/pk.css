@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+.rule {
+	display:table-cell;
+	width:25%;
+	text-align:left;
+	color         : #ffffff;
+	font-family: メイリオ ;
+}
+.div_form{
+    text-align: center;
+}
+
+.logout_form {
+	text-align: right;
+}
+.button_stand{
+  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 30pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 22px 19px;
+  background    : #7f007f;
+  color         : #ffffff;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #7f007f;
+}
+.button_stand:hover {
+  color         : #7f007f;
+  background    : #ffffff;
+}
+.button_hit{
+  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 25pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 22px 19px;
+  background    : #7f007f;
+  color         : #ffffff;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #7f007f;
+}
+.button_hit:hover {
+  color         : #7f007f;
+  background    : #ffffff;
+}
+.board {
+ margin        : auto;
+  box-sizing    : border-box;
+  width         : 100%;
+  max-width     : 500px;
+  height        : 100px;
+  padding       : 23px;
+  font-size     : 30px;
+  text-align    : center;
+  color         : #000000;
+  display:table-cell; width:50%;
+  text-align: center;
+
+  background    : #59b300;
+  border        : 7px ridge #7f4600;
+  border-radius : 1px;
+
+}
+.div_form {
+    text-align: center;
+}
+.div_form form {
+    display: inline-block;
+    margin: 0px 8px;
+}
+.outline_lose {
+	display        : inline-block;
+  font-family		 : 創英角ポップ体 ;
+  font-weight	   : bold ;
+  color          : #ffff1a;            /* 文字の色 */
+  font-size      : 8ex;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    :
+    	 2px  2px 7px #00007f,
+      -2px  2px 7px #00007f,
+       2px -2px 7px #00007f,
+      -2px -2px 7px #00007f,
+       2px  0px 7px #00007f,
+       0px  2px 7px #00007f,
+      -2px  0px 7px #00007f,
+       0px -2px 7px #00007f;        /* 文字の影 */
+}
+.outline {
+	display        : inline-block;
+  font-family		 : 創英角ポップ体 ;
+  font-weight	   : bold ;
+  color          : #ffff1a;            /* 文字の色 */
+  font-size      : 8ex;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    :
+     	 2px  2px 7px #ff0000,
+      -2px  2px 7px #ff0000,
+       2px -2px 7px #ff0000,
+      -2px -2px 7px #ff0000,
+       2px  0px 7px #ff0000,
+       0px  2px 7px #ff0000,
+      -2px  0px 7px #ff0000,
+       0px -2px 7px #ff0000;        /* 文字の影 */
+}
+.outline_msg {
+  display        : inline-block;
+  color          : #000000;            /* 文字の色 */
+  font-size      : 4ex;               /* 文字のサイズ */
+  letter-spacing : 2px;                /* 文字間 */
+  text-shadow    :
+       1px  1px 0px #ffffff,
+      -1px  1px 0px #ffffff,
+       1px -1px 0px #ffffff,
+      -1px -1px 0px #ffffff,
+       1px  0px 0px #ffffff,
+       0px  1px 0px #ffffff,
+      -1px  0px 0px #ffffff,
+       0px -1px 0px #ffffff;        /* 文字の影 */
+}
+#popup{
+
+  background:#000;
+  padding:1% 1%;
+  box-sizing:border-box;
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.rule img{
+  width:100%;
+}
+label{
+  display:block;
+}
+label span{
+  display:block;
+  background-color:#01b6ed;
+  color:#fff;
+  width:100px;
+  line-height:40px;
+  border-radius:4px;
+  text-align:center;
+}
+label span:hover{
+  cursor:pointer;
+}
+input[type="checkbox"]{
+  display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+  display:block;
+  transition:.2s;
+}

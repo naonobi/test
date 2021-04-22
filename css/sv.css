@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.div_form {
+    text-align: center;
+}
+.div_form form {
+    display: inline-block;
+    margin: 0px 8px;
+}
+.outline_lose {
+	display        : inline-block;
+  font-family		 : 創英角ポップ体 ;
+  font-weight	   : bold ;
+  color          : #ffff1a;            /* 文字の色 */
+  font-size      : 8ex;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    :
+    	 2px  2px 7px #00007f,
+      -2px  2px 7px #00007f,
+       2px -2px 7px #00007f,
+      -2px -2px 7px #00007f,
+       2px  0px 7px #00007f,
+       0px  2px 7px #00007f,
+      -2px  0px 7px #00007f,
+       0px -2px 7px #00007f;        /* 文字の影 */
+}
+.outline {
+	display        : inline-block;
+  font-family		 : 創英角ポップ体 ;
+  font-weight	   : bold ;
+  color          : #ffff1a;            /* 文字の色 */
+  font-size      : 8ex;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    :
+     	 2px  2px 7px #ff0000,
+      -2px  2px 7px #ff0000,
+       2px -2px 7px #ff0000,
+      -2px -2px 7px #ff0000,
+       2px  0px 7px #ff0000,
+       0px  2px 7px #ff0000,
+      -2px  0px 7px #ff0000,
+       0px -2px 7px #ff0000;        /* 文字の影 */
+}
+.outline_msg {
+  display        : inline-block;
+  color          : #000000;            /* 文字の色 */
+  font-size      : 4ex;               /* 文字のサイズ */
+  letter-spacing : 2px;                /* 文字間 */
+  text-shadow    :
+       1px  1px 0px #ffffff,
+      -1px  1px 0px #ffffff,
+       1px -1px 0px #ffffff,
+      -1px -1px 0px #ffffff,
+       1px  0px 0px #ffffff,
+       0px  1px 0px #ffffff,
+      -1px  0px 0px #ffffff,
+       0px -1px 0px #ffffff;        /* 文字の影 */
+}
+#popup{
+
+  background:#000;
+  padding:1% 1%;
+  box-sizing:border-box;
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.rule img{
+  width:100%;
+}
+label{
+  display:block;
+}
+label span{
+  display:block;
+  background-color:#01b6ed;
+  color:#fff;
+  width:100px;
+  line-height:40px;
+  border-radius:4px;
+  text-align:center;
+}
+label span:hover{
+  cursor:pointer;
+}
+input[type="checkbox"]{
+  display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+  display:block;
+  transition:.2s;
+}
