@@ -93,6 +93,7 @@ public class AccountDAO {
 		}
 		return true;
 	}
+	// 退会時にDBからアカウントを削除する
 	public boolean cancelMembership(GamePlayer gamePlayer) {
 
 		try{
