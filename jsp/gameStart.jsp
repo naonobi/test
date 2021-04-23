@@ -6,12 +6,13 @@
 <meta charset="UTF-8">
 <title>BJスタート画面</title>
 <link rel="stylesheet" type="text/css" href="/bj/css/bj.css">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body class="body">
 	<div style="display:table; width:100%; margin:5px auto;">
 	<div style="display:table-cell; width:25%; background-color:white; text-align:center;">ユーザー名:${gamePlayer.name}</div>
 	<div style="display:table-cell; width:50%; color:white; text-align:center;"><a href="/bj/GameChoice?select=1" style="color:white">＜ ゲーム選択画面へ ＞</a></div>
-	<div style="display:table-cell; width:25%; background-color:white; text-align:center;">キャッシュ残高:${gamePlayer.wallet}コイン</div>
+	<div style="display:table-cell; width:25%; background-color:white; text-align:center;">残高:${gamePlayer.wallet}コイン</div>
 	</div>
 	<br><br>
     <div style="text-align: center; color: gold;"><font size="7" face="メイリオ">ブラックジャック</font></div>

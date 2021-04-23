@@ -13,7 +13,11 @@ String errMsg = (String)request.getAttribute("errMsg");
 <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body style="text-align:center">
-    <br><br>
+
+	■webアプリ開発演習で製作■<br>
+	4名チームにて作成　工数:48h/人<br>
+	ソースコード<br>
+
 	<h2>カジノへようこそ</h2>
 	<div class="div_form">
 	<form action="/bj/LoginServlet" method="post">
@@ -26,5 +30,6 @@ String errMsg = (String)request.getAttribute("errMsg");
 	新規ユーザー登録は<a href="/bj/RegisterServlet" style="color: green">こちら</a>
 	</form>
 	</div>
+	退会は<a href="/bj/CancelServlet" style="color: gray">こちら</a>
 </body>
 </html>

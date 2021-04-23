@@ -8,7 +8,7 @@ public class Deck {
 	private List<String> deckList;
 
 	public Deck() {
-		deckList = new ArrayList();
+		deckList = new ArrayList<>();
 		deckList.add("02");
 		deckList.add("03");
 		deckList.add("04");

@@ -60,7 +60,7 @@ List<String> gmHand = gameMaster.getHand();
 	</div>
 
     <div style="text-align: center; color: white">
-        [ ベット金額:${gamePlayer.bet }コイン ]</div>
+        [ ベット金額:${gamePlayer.bet}コイン ]</div>
     <div class="div_form">
     	<form action="/bj/Stand" method="post">
     	<input type="submit" value="スタンド" class="button_stand">

@@ -8,8 +8,8 @@ public class HandConversionLogic {
 	// プレイヤーor親の手札を受け取り処理する
 
 	/* カードと点数の対応例
-	*  02, 03, 04, 05, 06, 07, 08, 09, 0T, 0J, 0Q, 0K, 0A
-	*   2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 1or11
+	*  カード名 02, 03, 04, 05, 06, 07, 08, 09, 0T, 0J, 0Q, 0K, 0A
+	* 	   点数  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 1or11
 	*/
 
 	// 変換後の点数を格納するﾘｽﾄを用意
@@ -18,12 +18,10 @@ public class HandConversionLogic {
 	// 引数に手札を受け取り、点数のリストに変換して返すﾒｿｯﾄﾞ
 	public List<Integer> handConversion(List<String> hand) {
 
-		// 手札を1枚ずつconvertToNumで点数に変換しscoreListに追加
+		// 手札を1枚ずつconvertToNum()で点数に変換しscoreListに追加
 		for(int i = 0; i< hand.size(); i++) {
 			scoreList.add(convertToNum(hand.get(i)));
 		}
-
-
 		/* 手札中のAは全て11で変換されているため、下記条件で11→1に変更する。
 		 *  ①手札にAが1枚だけの時、手札の合計が22以上の場合にAは11→1となる
 		 *  ➁手札にAが2枚以上の時（例：手札に最大4枚のAが含まれる場合：0A、1A、2A、3A）

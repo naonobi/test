@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameMaster implements Player{
-	private List<String> hand = new ArrayList();
+	private List<String> hand = new ArrayList<>();
 	private int handSum;
 
 	public List<String> getHand(){

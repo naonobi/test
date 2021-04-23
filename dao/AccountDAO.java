@@ -14,13 +14,13 @@ public class AccountDAO {
 	private final String USER = "postgres";
 	private final String PASS ="ok";
 
+	// DBに登録されているユーザーか確認
 	public GamePlayer findByLogin(Login login) {
 		GamePlayer account = null;
-		//データベース接続
 
-		try{Class.forName("org.postgresql.Driver");
+		try{
+			Class.forName("org.postgresql.Driver");
 			Connection conn = DriverManager.getConnection(URL,USER,PASS);
-			//select文
 			String sql = "select id,pass,name,age,wallet from account where id = ? and pass = ?";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, login.getId());
@@ -44,14 +44,12 @@ public class AccountDAO {
 		}
 		return account;
 	}
-
+	// DBにユーザー登録情報を書き込み
 	public boolean userRegister(GamePlayer account) {
 
-		//データベース接続
-
-		try{Class.forName("org.postgresql.Driver");
+		try{
+			Class.forName("org.postgresql.Driver");
 			Connection conn = DriverManager.getConnection(URL,USER,PASS);
-			//select文
 			String sql = "insert into account(id,pass,name,age) values(?,?,?,?)";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, account.getId());
@@ -72,22 +70,22 @@ public class AccountDAO {
 		return true;
 	}
 
+	// ログアウト時にコイン残高を上書きする
 	public boolean logout(GamePlayer account) {
-		//データベース接続
 
-		try{Class.forName("org.postgresql.Driver");
-		Connection conn = DriverManager.getConnection(URL,USER,PASS);
-		//select文
-		String sql = "update account set wallet = ? where id = ?";
-		PreparedStatement pStmt = conn.prepareStatement(sql);
-		pStmt.setInt(1, account.getWallet());
-		pStmt.setString(2, account.getId());
+		try{
+			Class.forName("org.postgresql.Driver");
+			Connection conn = DriverManager.getConnection(URL,USER,PASS);
+			String sql = "update account set wallet = ? where id = ?";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setInt(1, account.getWallet());
+			pStmt.setString(2, account.getId());
 
-		int result = pStmt.executeUpdate();
+			int result = pStmt.executeUpdate();
 
-		if(result != 1) {
-			return false;
-		}
+			if(result != 1) {
+				return false;
+			}
 
 		}catch(Exception e){
 			e.printStackTrace();
@@ -95,4 +93,26 @@ public class AccountDAO {
 		}
 		return true;
 	}
+	public boolean cancelMembership(GamePlayer gamePlayer) {
+
+		try{
+			Class.forName("org.postgresql.Driver");
+			Connection conn = DriverManager.getConnection(URL,USER,PASS);
+			String sql = "delete from account where id = ? ";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setString(1, gamePlayer.getId());
+
+			int result = pStmt.executeUpdate();
+
+			if(result != 1) {
+				return false;
+			}
+
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
 }
